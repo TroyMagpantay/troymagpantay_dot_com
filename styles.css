@@ -217,9 +217,10 @@
   background-color: #131313;
   z-index: 1;
   width: 100%;
-  max-width: 1300px;
+  max-width: 100%;
   padding-right: 50px;
   padding-left: 50px;
+  padding: 0 20px; /* Adjust padding for smaller screens */
 }
 
 .main__content {
@@ -255,6 +256,8 @@
   margin-top: 1rem;
   font-size: 2rem;
   font-weight: 700;
+  white-space: normal; /* Allows text to wrap */
+  word-wrap: break-word; /* Breaks long words to fit the container */
 }
 
 .main__btn {
@@ -309,19 +312,32 @@
 
 /* Mobile Responsive */
 @media screen and (max-width: 768px) {
+  * {
+    box-sizing: border-box; /* Ensure proper box sizing */
+  }
+  
+  body {
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+  }
+
   .main__container {
-    /* display: grid; */
+    max-width: 100%; /* Ensures container does not exceed viewport width */
+    overflow: hidden; /* Hide any overflow */
+    display: flex;
     /* grid-template-columns: auto; */
     align-items: center;
     justify-self: center;
     width: 100%;
     margin: 0 auto;
     height: 90vh;
+    padding: 0 20px;
   }
 
   .main__content {
     text-align: center;
     margin-bottom: 4rem;
+    overflow-x: hidden;
+    word-break: break-all; /* Breaks long words */
   }
 
   .main__content h1 {
