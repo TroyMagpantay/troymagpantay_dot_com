@@ -201,11 +201,15 @@
 /* Main Content CSS */
 .main {
   background-color: #141414;
+  height: 100vh; /* Ensure the main container takes full height for centering */
+  display: flex; /* Enable Flexbox */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
 }
 
 .main__container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  /* grid-template-columns: 1fr 1fr; */
   align-items: center;
   justify-self: center;
   margin: 0 auto;
@@ -219,6 +223,7 @@
 }
 
 .main__content {
+  text-align: center; /* Center text horizontally within this container */
   color: #fff;
   width: 100%;
 }
@@ -305,8 +310,8 @@
 /* Mobile Responsive */
 @media screen and (max-width: 768px) {
   .main__container {
-    display: grid;
-    grid-template-columns: auto;
+    /* display: grid; */
+    /* grid-template-columns: auto; */
     align-items: center;
     justify-self: center;
     width: 100%;
