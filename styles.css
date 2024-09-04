@@ -256,7 +256,7 @@
   margin-top: 1rem;
   font-size: 2rem;
   font-weight: 700;
-  white-space: normal; /* Allows text to wrap */
+  white-space: nowrap; /* Allows text to wrap */
   overflow-wrap: break-word;
   word-wrap: break-word; /* Breaks long words to fit the container */
 }
@@ -338,8 +338,9 @@
     text-align: center;
     margin-bottom: 4rem;
     overflow-x: hidden;
-    word-break: break-normal;
+    word-break: break-word;
     overflow-wrap: break-word; /* Breaks long words */
+    white-space: normal;
   }
 
   .main__content h1 {
@@ -385,7 +386,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 25vh;
+  height: 30vh;
 }
 
 .descriptions h1 {
@@ -424,7 +425,7 @@
   justify-content: center;
   align-items: center;
   height: 30vh;
-  margin-bottom: -7rem;
+  margin-bottom: 0;
 }
 
 .work h1 {
@@ -435,8 +436,8 @@
   /* -moz-background-clip: text; */
   -webkit-text-fill-color: transparent;
   /* -moz-text-fill-color: transparent; */
-  margin-bottom: -5rem;
-  
+  margin-bottom: 0;
+  margin-top: 5rem
 }
 
 .work p {
@@ -449,7 +450,7 @@
   -webkit-text-fill-color: transparent;
   /* -moz-text-fill-color: transparent; */
   font-size: 1.2rem;
-  margin-top: -5rem;
+  margin-top: 0;
   max-width: 25%; 
   text-align: center;
 }
