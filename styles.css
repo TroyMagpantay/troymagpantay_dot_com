@@ -337,9 +337,9 @@
   .main__content {
     text-align: center;
     margin-bottom: 4rem;
-    overflow-x: hidden;
-    overflow-wrap: break-word; /* Breaks long words */
-    white-space: normal;
+    overflow-wrap: break-word; /* Allows long words to break and wrap onto the next line */
+    word-break: break-word; /* Ensures that long words break */
+    white-space: normal; /* Allows text to wrap naturally */
   }
 
   .main__content h1 {
@@ -385,7 +385,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 70vh;
+  height: 90vh;
 }
 
 .descriptions h1 {
@@ -398,6 +398,7 @@
   -moz-text-fill-color: transparent;
   margin-bottom: 1rem;
   margin-top: 0;
+  font-size: 2.5rem;
   
 }
 
@@ -412,7 +413,7 @@
   /* -moz-text-fill-color: transparent; */
   font-size: 1.2rem;
   margin-top: 0;
-  max-width: 25%; 
+  max-width: 75%; 
   text-align: center;
 }
 
@@ -423,7 +424,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 70vh;
+  height: 50vh;
   margin-bottom: 0;
 }
 
@@ -436,7 +437,8 @@
   -webkit-text-fill-color: transparent;
   /* -moz-text-fill-color: transparent; */
   margin-bottom: 0;
-  margin-top: 5rem
+  margin-top: 5rem;
+  font-size: 2.5rem;
 }
 
 .work p {
@@ -450,7 +452,7 @@
   /* -moz-text-fill-color: transparent; */
   font-size: 1.2rem;
   margin-top: 0;
-  max-width: 25%; 
+  max-width: 50%; 
   text-align: center;
 }
 
